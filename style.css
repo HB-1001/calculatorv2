@@ -1,0 +1,167 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Reggae One", cursive;
+}
+
+/* trying to set up Master-Parent to center calculator */
+.parent {
+  display: grid;
+  background-color: #03071e;
+  width: 100%;
+  height: 100vh;
+  justify-items: center;
+  align-items: center;
+}
+
+/* setting up container template area */
+.display {
+  grid-area: display;
+  display: flex;
+  flex-direction: column;
+  background-color: oldlace;
+  border-radius: 10px;
+  width: 90%;
+  margin-top: 20px;
+  color: #d00000;
+  height: 120px;
+  justify-content: end;
+  align-items: flex-end;
+  font-size: 40px;
+  padding-right: 10px;
+  box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0.1), 0 0 0 2px rgb(255, 255, 255),
+    0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
+}
+
+.display1 {
+    justify-self: start;
+    align-self:flex-start;
+}
+
+.row0 {
+  padding-top: 20px;
+  grid-area: row0;
+  background-color: #03071e;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  display: flex;
+}
+.row1 {
+  grid-area: row1;
+  background-color: #03071e;
+  width: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.row2 {
+  grid-area: row2;
+  background-color: #03071e;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.row3 {
+  grid-area: row3;
+  background-color: #03071e;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.row4 {
+  grid-area: row4;
+  background-color: #03071e;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* setting up calculator container */
+.container {
+  box-sizing: border-box;
+  background-color: #03071e;
+  height: 500px;
+  width: 30%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "display "
+    "row0 "
+    "row1 "
+    "row2 "
+    "row3 "
+    "row4 ";
+  justify-items: center;
+  border-radius: 10px;
+  -webkit-box-shadow: 4px -4px 15px 0px #ff1f1f, 12px -11px 7px 0px #ff9376,
+    20px -5px 7px 0px #ffe264, 20px 6px 7px 0px #f6ff33,
+    13px 12px 17px 0px #ff9527, 2px 17px 17px 0px #ff0000,
+    -9px 21px 18px 0px #fff212, -9px 6px 11px 0px #ff0808,
+    -11px -9px 11px 0px #fffa17, -11px -9px 11px 0px #fffa17,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+  box-shadow: 4px -4px 15px 0px #ff1f1f, 12px -11px 7px 0px #ff9376,
+    20px -5px 7px 0px #ffe264, 20px 6px 7px 0px #f6ff33,
+    13px 12px 17px 0px #ff9527, 2px 17px 17px 0px #ff0000,
+    -9px 21px 18px 0px #fff212, -9px 6px 11px 0px #ff0808,
+    -11px -9px 11px 0px #fffa17, -11px -9px 11px 0px #fffa17,
+    5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+/* styling buttons */
+.container button {
+  width: 70px;
+  height: 45px;
+  border-radius: 20px;
+  font-family: "Reggae One", cursive;
+  font-size: 25px;
+  border: none;
+}
+
+.container button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.container button:active {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.number {
+  background-color: #ffba08;
+  color: #d00000;
+}
+
+.dot {
+  background-color: #ffba08;
+  color: #d00000;
+}
+
+.equal {
+  background-color: #dc2f02;
+  color: white;
+}
+
+.operator {
+  background-color: #f48c06;
+  color: white;
+}
+
+#plus {
+  width: 175px;
+  box-sizing: border-box;
+}
+
+.reset,
+.percentage,
+.delete {
+  color: white;
+  background-color: #e85d04;
+}
+
+/* flame */

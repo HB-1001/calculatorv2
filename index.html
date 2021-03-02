@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Reggae+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap"
+      rel="stylesheet"
+    />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="container">
+        <div class="display">
+          <div class="display1"></div>
+          <div class="display2"></div>
+        </div>
+        <div class="row0">
+          <button class="reset">A/C</button
+          ><button class="delete" data-key="Backspace">DEL</button>
+          <button class="percentage">%</button
+          ><button class="operator" data-key="/">÷</button>
+        </div>
+        <div class="row1">
+          <button class="number" data-key="7">7</button
+          ><button class="number" data-key="8">8</button
+          ><button class="number" data-key="9">9</button>
+          <button class="operator" data-key="*">×</button>
+        </div>
+        <div class="row2">
+          <button class="number" data-key="4">4</button
+          ><button class="number" data-key="5">5</button
+          ><button class="number" data-key="6">6</button>
+          <button class="operator" data-key="-">−</button>
+        </div>
+        <div class="row3">
+          <button class="number" data-key="1">1</button
+          ><button class="number" data-key="2">2</button
+          ><button class="number" data-key="3">3</button>
+          <button class="operator" data-key="+">+</button>
+        </div>
+        <div class="row4">
+          <button class="dot" data-key=".">.</button>
+          <button class="number" data-key="0">0</button
+          ><button class="equal" id="plus" data-key="Enter">=</button>
+        </div>
+      </div>
+    </div>
+    <script src="javascript.js"></script>
+  </body>
+</html>
