@@ -6,7 +6,8 @@ body {
 /* trying to set up Master-Parent to center calculator */
 .parent {
   display: grid;
-  background-color: #03071e;
+  background-color: cornsilk;
+
   width: 100%;
   height: 100vh;
   justify-items: center;
@@ -22,7 +23,7 @@ body {
     "display1"
     "display2";
   flex-direction: column;
-  /* background-color: cornsilk; */
+  background-color: cornsilk;
   border-radius: 10px;
   width: 90%;
   margin-top: 20px;
@@ -49,10 +50,8 @@ body {
 }
 
 #display2 {
-    font-size: 100px;
+  font-size: 100px;
 }
-
-
 
 .row0 {
   padding-top: 20px;

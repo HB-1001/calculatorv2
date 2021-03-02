@@ -15,16 +15,15 @@ function disable() {
       button.disabled = true;
     }
   });
-  display1.textContent=""
-  display1.style.fontSize="20px"
+  display1.textContent = "";
+  display1.style.fontSize = "20px";
 }
 
 function enable() {
   buttons.forEach((button) => {
     button.disabled = false;
   });
-  display1.style.fontSize="20px"
-
+  display1.style.fontSize = "20px";
 }
 
 // trying out calculator without arrays
@@ -125,8 +124,7 @@ operators.forEach((operator) => {
       }
     } else {
       disable();
-      display.textContent =
-        "error: invalid operator";
+      display.textContent = "error: invalid operator";
     }
   });
 });
